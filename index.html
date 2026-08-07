@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tasador de inmuebles — Demo — Belu Novarese</title>
+<meta name="description" content="App de escritorio (Electron) que arma la tasación completa de un inmueble —catastro, fotos y memoria— y entrega el documento Word listo para firmar." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F7F2; --paper-2:#EFEDE5; --rose-tint:#F7E5EA;
+    --sage:#4F7D67; --rose:#D98FA3; --ink:#171A18;
+    --ink-2:#4B4740; --ink-3:#8C8579; --line:rgba(23,26,24,0.14);
+    --rose-deep:#A34F70; --sage-deep:#3A5E4C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--paper);color:var(--ink);font-family:'Public Sans',sans-serif;line-height:1.6;}
+  h1,h2{font-family:'Fraunces',serif;font-weight:700;line-height:1.12;text-wrap:balance;}
+  a{color:inherit;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+  header.top{padding:20px 0;border-bottom:1px solid var(--line);}
+  header.top a{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:var(--ink-3);text-decoration:none;}
+  header.top a:hover{color:var(--ink);}
+  .hero{padding:64px 0 40px;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--sage-deep);}
+  h1{font-size:clamp(2rem,5vw,2.8rem);margin-top:14px;}
+  .hero p{color:var(--ink-2);font-size:17px;max-width:640px;margin-top:18px;}
+  .note{margin-top:22px;font-size:13.5px;color:var(--ink-3);border-left:2px solid var(--line);padding-left:14px;}
+  .gallery{padding:20px 0 80px;display:grid;gap:28px;}
+  figure{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;}
+  figure img{width:100%;display:block;}
+  figcaption{padding:14px 18px;font-size:13.5px;color:var(--ink-2);font-family:'IBM Plex Mono',monospace;}
+  footer{padding:32px 0;border-top:1px solid var(--line);text-align:center;color:var(--ink-3);font-size:13px;}
+  footer a{color:var(--sage-deep);font-weight:600;text-decoration:none;}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a href="https://belunova.github.io/#proyectos">&larr; volver al portfolio de Belu Novarese</a></div></header>
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Automatización · Escritorio</span>
+    <h1>Tasador de inmuebles</h1>
+    <p>App de escritorio (Electron) que arma la tasación completa de un inmueble —catastro, fotos y memoria— y entrega el documento Word listo para firmar.</p>
+    <p class="note">Proyecto privado de una mentoreada o cliente — esta página muestra solo capturas de uso, sin el código fuente. Por protección de datos, la información que ves acá es ficticia.</p>
+  </div>
+</section>
+<section class="gallery">
+  <div class="wrap" style="display:grid;gap:28px;">
+    <figure><img src="img/01.webp" alt="Formulario inicial" loading="lazy"><figcaption>Formulario inicial</figcaption></figure>
+    <figure><img src="img/02.webp" alt="Formulario con datos de ejemplo" loading="lazy"><figcaption>Formulario con datos de ejemplo</figcaption></figure>
+    <figure><img src="img/03.webp" alt="Generando el documento" loading="lazy"><figcaption>Generando el documento</figcaption></figure>
+  </div>
+</section>
+<footer><div class="wrap">Un proyecto de <a href="https://belunova.github.io/">María Belén Novarese</a> — los procesos primero, la tecnología después.</div></footer>
+</body>
+</html>
